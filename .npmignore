@@ -1,0 +1,11 @@
+src/
+examples/
+tests/
+coverage/
+.github/
+.gitignore
+rollup.config.js
+tsconfig.json
+jest.config.js
+.babelrc
+*.log
