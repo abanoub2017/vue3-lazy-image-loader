@@ -1,0 +1,38 @@
+{
+  "name": "vue3-lazy-image-loader",
+  "version": "1.0.0",
+  "description": "A Vue 3 plugin for lazy loading images with IntersectionObserver",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "lazy-load",
+    "images",
+    "intersection-observer"
+  ],
+  "author": "Abanoub",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0",
+    "rollup": "^2.79.1",
+    "typescript": "^4.9.3",
+    "jest": "^29.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vue3-lazy-image-loader"
+  }
+}
