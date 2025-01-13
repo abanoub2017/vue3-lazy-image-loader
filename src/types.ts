@@ -16,11 +16,17 @@ export interface LazyImageOptions {
     errorStyle?: {
         backgroundColor?: string;
         icon?: boolean;
+        borderColor?: string;
+        textColor?: string;
     };
     transition?: {
         duration?: string;
         timing?: string;
     };
+    placeholderContent?: string; // Custom placeholder content
+    onLoad?: (el: HTMLImageElement, src: string) => void; // Hook for successful load
+    onError?: (el: HTMLImageElement, src: string) => void; // Hook for errors
+
 }
 
 declare module 'vue' {
