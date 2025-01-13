@@ -1,4 +1,4 @@
-import type { LazyImageOptions } from './types'
+import type { LazyImageOptions } from './types';
 
 export const createLoadingStyles = (options: LazyImageOptions): string => `
   .vue-lazy-image-wrapper {
@@ -44,5 +44,8 @@ export const createLoadingStyles = (options: LazyImageOptions): string => `
 
   .error {
     background-color: ${options.errorStyle?.backgroundColor || '#fef2f2'};
+    border: 1px solid ${options.errorStyle?.borderColor || '#dc2626'}; /* Optional error border */
+    color: ${options.errorStyle?.textColor || '#dc2626'};
+        object-fit: contain;
   }
-`
+`;
